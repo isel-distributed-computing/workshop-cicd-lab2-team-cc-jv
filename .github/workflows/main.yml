@@ -8,6 +8,8 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 jobs:
   build-services:
+    env:
+      JWT_SECRET:  ${{ secrets.JWT_SECRETS }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -23,8 +25,8 @@ jobs:
           cache: maven
       - name: Build Auth Service with Maven
         run: |
-          cd authusers
-          mvn -B package
+          cd authusers 
+          mvn -B package -DJWT_TOKEN="$JWT_TOKEN"
       - name: Build Todolist Service with Maven
         run: | 
           cd todolist
@@ -34,6 +36,8 @@ jobs:
           cd notifications
           mvn -B package
   publish-docker-image:
+    env:
+      JWT_SECRET:  ${{ secrets.JWT_SECRETS }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -56,7 +60,7 @@ jobs:
     - name: Build Auth Service with Maven
       run: |
         cd authusers
-        mvn -B package
+        mvn -B package -DJWT_TOKEN="$JWT_TOKEN"
     - name: Extract metadata (tags, labels) for Docker
       id: meta-auth
       uses: docker/metadata-action@v4
