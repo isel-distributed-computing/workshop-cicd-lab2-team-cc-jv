@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 import todolist.notificationservice.model.EventModel;
 import todolist.notificationservice.repository.EventRepository;
 
+import java.net.ConnectException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,8 +34,8 @@ public class NotificationService //{
     @Value("${spring.rabbitmq.password}")
     private String PASSWORD;
 
-
-    //private EventRepository eventRepository;
+    @Autowired
+    private EventRepository eventRepository;
 
     /*
     Autowired used for demonstrations purposes.
@@ -47,8 +48,9 @@ public class NotificationService //{
     private void logDB(EventModel evt)
     {        
         // Save event in database
-        //TODO
+        eventRepository.save(evt);
     }
+
     private void notify(EventModel evt)
     {
         logger.info(String.format("Received '%s'",evt));
@@ -64,19 +66,23 @@ public class NotificationService //{
         logger.info(String.format("Trying to connect to %s",HOST));
 
         //Setting resilient connection on missing resources
-        // TODO
 
         //creating connection to RabbitMQ
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost(HOST);
 
         //connect with failsafe policy
-        // TODO - Change this line to be resilient
-        Connection connection = factory.newConnection();
 
+        RetryPolicy<Object> retryPolicy = RetryPolicy.builder()
+                .handle(ConnectException.class)
+                .withDelay(Duration.ofSeconds(1))
+                .withMaxRetries(3)
+                .build();
 
-        //create channel and queue
-        Channel channel = connection.createChannel();
+        Channel channel;
+        Connection connection = Failsafe.with(retryPolicy).get(() -> factory.newConnection());
+        channel = connection.createChannel();
+
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
         logger.info(String.format("Waiting for messages on queue %s",QUEUE_NAME));
 

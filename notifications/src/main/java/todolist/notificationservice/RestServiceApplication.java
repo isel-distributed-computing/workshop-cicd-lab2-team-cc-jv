@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
-//@SpringBootApplication //TODO
-@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
+@SpringBootApplication
+//@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 @ComponentScan(basePackages = "todolist.*")
 public class RestServiceApplication {
 

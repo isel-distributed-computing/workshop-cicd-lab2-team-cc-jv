@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: ""
+    username: ""
+    password: ""
+
+todolist:
+  AUTH_SERVICE_URL: ""
+  QUEUE_NAME: ""
+  RABBITMQ_HOST: ""
+  RABBITMQ_USER: ""
+  RABBITMQ_PASS: ""
