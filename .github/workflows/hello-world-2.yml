@@ -25,4 +25,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run B
-      run: echo "B
+      run: echo "B"
