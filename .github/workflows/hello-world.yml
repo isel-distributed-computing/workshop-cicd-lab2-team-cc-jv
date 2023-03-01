@@ -1,5 +1,7 @@
 name: Hello world
-on: workflow_dispatch
+on: 
+  schedule: 
+    -  cron: '*/10 * * * *'
 jobs:
   # the id of the name
   hello-world-job:
@@ -12,3 +14,16 @@ jobs:
       # Runs a single command using the runner shell
       - name: Run a one-line script
         run: echo "Hello world"
+  A:
+    needs: hello-world-job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run A
+      run: echo "A"
+  B: 
+    needs: hello-world-job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run B
+      run: echo "B"
+    
