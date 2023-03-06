@@ -35,7 +35,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: authuser-jar
-          path: phase-3/authusers/target/authuser-phase2-1.0.0.jar
+          path: authusers/target/authuser-phase2-1.0.0.jar
           if-no-files-found: error
 
   publish-docker-auth:
