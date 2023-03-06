@@ -5,11 +5,11 @@
     },
     "item": [
       {
-        "id": "0cc6ab83-2c22-490a-b029-3e55e3a735af",
+        "id": "88972521-db85-428d-85ca-14c8877c6f73",
         "name": "Sessão4",
         "item": [
           {
-            "id": "21eb6131-0396-4b68-b088-0aa41960639f",
+            "id": "39dc7335-0df6-42a5-a164-72449516daa7",
             "name": "01 - Criar utilizador",
             "request": {
               "url": {
@@ -41,7 +41,7 @@
               {
                 "listen": "test",
                 "script": {
-                  "id": "f66f6082-d8c3-4cd7-96e8-2d1714aa4a88",
+                  "id": "0c3df96f-5399-4f2d-a7f0-30918a801747",
                   "type": "text/javascript",
                   "exec": [
                     "pm.test(\"Status code is 200\", function () {\r",
@@ -54,13 +54,13 @@
                     "pm.expect(pm.response.responseTime).to.be.below(3000);\r",
                     "});"
                   ],
-                  "_lastExecutionId": "16134dfc-5c11-4668-aaec-74bda5848232"
+                  "_lastExecutionId": "43ffd6c6-bcf2-439d-a7ca-ff24b5adc941"
                 }
               }
             ]
           },
           {
-            "id": "a0241381-63ad-4310-979b-ef2c2eb75237",
+            "id": "0538f6b1-6fb1-4ff4-b5b7-61527f32fe88",
             "name": "02 - Login",
             "request": {
               "url": {
@@ -92,7 +92,7 @@
               {
                 "listen": "test",
                 "script": {
-                  "id": "457ae5bc-23ce-46ba-ac2a-b1fbf990f6df",
+                  "id": "e740f9b0-1842-41d7-8c44-e52f18ddfc47",
                   "type": "text/javascript",
                   "exec": [
                     "pm.test(\"Status code is 200\", function () {\r",
@@ -107,13 +107,13 @@
                     "//set variable with token to be used in later interactions\r",
                     "pm.collectionVariables.set(\"token\", responseBody);"
                   ],
-                  "_lastExecutionId": "a0f64acf-5c86-4824-87a4-fff47bec7c97"
+                  "_lastExecutionId": "867df63c-2a3f-4207-a968-6595cea1eaa1"
                 }
               }
             ]
           },
           {
-            "id": "0cf49029-f863-4d9d-82cc-762630f9c151",
+            "id": "6968b76c-4358-42fe-833f-fcd7fb5bc96b",
             "name": "03 - Todolist",
             "request": {
               "url": {
@@ -150,7 +150,7 @@
               {
                 "listen": "test",
                 "script": {
-                  "id": "25e19218-ae35-4749-9afa-888c8c6ee466",
+                  "id": "43d325b7-42c8-49d5-8ed4-0a5bc4291543",
                   "type": "text/javascript",
                   "exec": [
                     "pm.test(\"Status code is 200\", function () {\r",
@@ -163,13 +163,13 @@
                     "    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
                     "});"
                   ],
-                  "_lastExecutionId": "4159e458-ffad-4d0e-a144-3225ed442860"
+                  "_lastExecutionId": "0ea836b0-79c1-47e7-8de8-0b896cd2ad2b"
                 }
               }
             ]
           },
           {
-            "id": "c9eb28ce-0f98-4c85-8136-953a9f2f25ce",
+            "id": "1828bf9a-d4a6-4306-aa5c-7c13e9423abe",
             "name": "04 - TodoList/joe",
             "request": {
               "url": {
@@ -202,18 +202,18 @@
               {
                 "listen": "prerequest",
                 "script": {
-                  "id": "3f8a2b9e-ef6f-4a03-ba37-c69271a54669",
+                  "id": "c9f08001-356f-4f1e-8822-0367ccde10c4",
                   "type": "text/javascript",
                   "exec": [
                     ""
                   ],
-                  "_lastExecutionId": "8cbf65e8-4dc4-4602-9564-71cc0c7074cd"
+                  "_lastExecutionId": "ebfa13a6-9c14-4a7f-8443-72bd593b5189"
                 }
               },
               {
                 "listen": "test",
                 "script": {
-                  "id": "2ae44620-546e-4618-b23c-4a1fedea2bd5",
+                  "id": "3336e0aa-43a2-4171-bb6c-01b2e06d5843",
                   "type": "text/javascript",
                   "exec": [
                     "pm.test(\"Status code is 200\", function () {\r",
@@ -226,13 +226,13 @@
                     "    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
                     "});"
                   ],
-                  "_lastExecutionId": "709498c0-3fd8-4cfb-8001-9fa1a694c9cb"
+                  "_lastExecutionId": "f093fe51-9847-4d1d-8ee3-c913f53b5b5b"
                 }
               }
             ]
           },
           {
-            "id": "65871da7-8612-42c0-a53a-17561f73c4c0",
+            "id": "491c5a9d-a831-49a5-952d-e153564083c0",
             "name": "05 - RABBITMQ - Check existing",
             "request": {
               "url": {
@@ -270,19 +270,19 @@
               {
                 "listen": "prerequest",
                 "script": {
-                  "id": "227daedb-2858-47d4-8612-83572421cb3d",
+                  "id": "6820b4eb-a61b-47f2-b2ec-d5e11c10cb89",
                   "type": "text/javascript",
                   "exec": [
                     "\r",
                     "setTimeout(function(){}, 20000);"
                   ],
-                  "_lastExecutionId": "41abb870-9b61-4403-bb70-3ccdfe0f1fac"
+                  "_lastExecutionId": "8c56dffb-ec4f-4847-a188-24d971b10aac"
                 }
               },
               {
                 "listen": "test",
                 "script": {
-                  "id": "820d7c52-bce3-40de-ba29-21065a2f42c4",
+                  "id": "db032054-b2a7-4169-8b57-e80a24195909",
                   "type": "text/javascript",
                   "exec": [
                     "//Test assume an empty database and empty queue\r",
@@ -302,7 +302,7 @@
                     "});\r",
                     ""
                   ],
-                  "_lastExecutionId": "4ef31bd4-520b-43c3-ae41-53d86334bbdb"
+                  "_lastExecutionId": "ddf20e3e-2d98-4859-90df-f104694749b0"
                 }
               }
             ]
@@ -326,11 +326,11 @@
     }
   },
   "environment": {
-    "id": "4dc95076-9c3b-4e61-80bb-9c8c4d221035",
+    "id": "3fbcc64c-84cc-46ab-842a-9a89ebbfde28",
     "values": []
   },
   "globals": {
-    "id": "1993b58a-60e5-4381-bfe4-6b7b550cd64a",
+    "id": "ce05b0a2-83ec-4f2b-b01a-ed9a61e090d8",
     "values": []
   },
   "run": {
@@ -368,7 +368,7 @@
       "assertions": {
         "total": 15,
         "pending": 0,
-        "failed": 1
+        "failed": 0
       },
       "testScripts": {
         "total": 5,
@@ -382,10 +382,10 @@
       }
     },
     "timings": {
-      "responseAverage": 333,
-      "responseMin": 16,
-      "responseMax": 693,
-      "responseSd": 240.00166666087966,
+      "responseAverage": 1099.4,
+      "responseMin": 37,
+      "responseMax": 2044,
+      "responseSd": 740.4354394543794,
       "dnsAverage": 0,
       "dnsMin": 0,
       "dnsMax": 0,
@@ -394,8 +394,8 @@
       "firstByteMin": 0,
       "firstByteMax": 0,
       "firstByteSd": 0,
-      "started": 1678104914687,
-      "completed": 1678104936694
+      "started": 1678106562716,
+      "completed": 1678106588861
     },
     "executions": [
       {
@@ -408,11 +408,11 @@
           "eof": false,
           "bof": true,
           "cr": false,
-          "ref": "6ee76ef6-7618-401f-8169-353393ee31a5",
-          "httpRequestId": "f8ce00c2-8efc-4b40-86a8-26581f5a9d59"
+          "ref": "78b9a7f0-b0cd-47b3-8e02-3f63f7cf839f",
+          "httpRequestId": "0b122a6c-73d5-4238-b0c6-f759c5b4b898"
         },
         "item": {
-          "id": "21eb6131-0396-4b68-b088-0aa41960639f",
+          "id": "39dc7335-0df6-42a5-a164-72449516daa7",
           "name": "01 - Criar utilizador",
           "request": {
             "url": {
@@ -444,7 +444,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "f66f6082-d8c3-4cd7-96e8-2d1714aa4a88",
+                "id": "0c3df96f-5399-4f2d-a7f0-30918a801747",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {\r",
@@ -457,7 +457,7 @@
                   "pm.expect(pm.response.responseTime).to.be.below(3000);\r",
                   "});"
                 ],
-                "_lastExecutionId": "16134dfc-5c11-4668-aaec-74bda5848232"
+                "_lastExecutionId": "43ffd6c6-bcf2-439d-a7ca-ff24b5adc941"
               }
             }
           ]
@@ -499,7 +499,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "84171ecc-8aaf-4ee2-8d58-cb92b64f0b68",
+              "value": "5a64126b-d5c8-4b5b-b782-163efe569107",
               "system": true
             },
             {
@@ -535,9 +535,9 @@
           }
         },
         "response": {
-          "id": "dbd65d4f-9c22-4ed1-bac6-cccdec76e45a",
-          "status": "Bad Request",
-          "code": 400,
+          "id": "94940844-0002-4d64-bc1f-9967a5f210b1",
+          "status": "OK",
+          "code": 200,
           "header": [
             {
               "key": "Content-Type",
@@ -545,15 +545,19 @@
             },
             {
               "key": "Content-Length",
-              "value": "24"
+              "value": "28"
             },
             {
               "key": "Date",
-              "value": "Mon, 06 Mar 2023 12:15:14 GMT"
+              "value": "Mon, 06 Mar 2023 12:42:43 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
             },
             {
               "key": "Connection",
-              "value": "close"
+              "value": "keep-alive"
             }
           ],
           "stream": {
@@ -570,37 +574,34 @@
               105,
               115,
               116,
-              114,
-              97,
-              116,
-              105,
-              111,
-              110,
-              32,
-              102,
-              97,
-              105,
-              108,
               101,
-              100
+              114,
+              101,
+              100,
+              32,
+              115,
+              117,
+              99,
+              99,
+              101,
+              115,
+              115,
+              102,
+              117,
+              108,
+              108,
+              121
             ]
           },
           "cookie": [],
-          "responseTime": 266,
-          "responseSize": 24
+          "responseTime": 1402,
+          "responseSize": 28
         },
-        "id": "21eb6131-0396-4b68-b088-0aa41960639f",
+        "id": "39dc7335-0df6-42a5-a164-72449516daa7",
         "assertions": [
           {
             "assertion": "Status code is 200",
-            "skipped": false,
-            "error": {
-              "name": "AssertionError",
-              "index": 0,
-              "test": "Status code is 200",
-              "message": "expected response to have status code 200 but got 400",
-              "stack": "AssertionError: expected response to have status code 200 but got 400\n   at Object.eval sandbox-script.js:1:1)"
-            }
+            "skipped": false
           },
           {
             "assertion": "Content-Type header is text/plain",
@@ -614,15 +615,15 @@
       },
       {
         "cursor": {
-          "ref": "8d7def20-edff-4d43-9d06-349fb81d73bb",
+          "ref": "27dccba5-3084-4bfd-926e-93c116656885",
           "length": 5,
           "cycles": 1,
           "position": 1,
           "iteration": 0,
-          "httpRequestId": "dedf32bc-084e-47f1-b46d-c87b98ddc632"
+          "httpRequestId": "3d51a8bf-cca6-4525-853c-82cf7ff1c507"
         },
         "item": {
-          "id": "a0241381-63ad-4310-979b-ef2c2eb75237",
+          "id": "0538f6b1-6fb1-4ff4-b5b7-61527f32fe88",
           "name": "02 - Login",
           "request": {
             "url": {
@@ -654,7 +655,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "457ae5bc-23ce-46ba-ac2a-b1fbf990f6df",
+                "id": "e740f9b0-1842-41d7-8c44-e52f18ddfc47",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {\r",
@@ -669,7 +670,7 @@
                   "//set variable with token to be used in later interactions\r",
                   "pm.collectionVariables.set(\"token\", responseBody);"
                 ],
-                "_lastExecutionId": "a0f64acf-5c86-4824-87a4-fff47bec7c97"
+                "_lastExecutionId": "867df63c-2a3f-4207-a968-6595cea1eaa1"
               }
             }
           ]
@@ -711,7 +712,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "a9724641-bf47-427f-938b-b613cf3ee278",
+              "value": "ef0427a8-75bf-4c8b-8147-b7e21381ddb5",
               "system": true
             },
             {
@@ -747,7 +748,7 @@
           }
         },
         "response": {
-          "id": "d2171a40-bd8e-4f0d-9545-1528b0ee4aa1",
+          "id": "7e91a1a1-eeef-4e1e-8389-16cd663b67d4",
           "status": "OK",
           "code": 200,
           "header": [
@@ -761,7 +762,7 @@
             },
             {
               "key": "Date",
-              "value": "Mon, 06 Mar 2023 12:15:14 GMT"
+              "value": "Mon, 06 Mar 2023 12:42:44 GMT"
             },
             {
               "key": "Keep-Alive",
@@ -883,10 +884,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 182,
+          "responseTime": 454,
           "responseSize": 105
         },
-        "id": "a0241381-63ad-4310-979b-ef2c2eb75237",
+        "id": "0538f6b1-6fb1-4ff4-b5b7-61527f32fe88",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -904,15 +905,15 @@
       },
       {
         "cursor": {
-          "ref": "5efa718a-6f1d-4efe-a5c1-952eaa0db281",
+          "ref": "291a4d12-c148-413c-a3fd-a533550d704e",
           "length": 5,
           "cycles": 1,
           "position": 2,
           "iteration": 0,
-          "httpRequestId": "663afae3-3f49-47be-9185-9ec6e65d5c96"
+          "httpRequestId": "58ddaecb-2f76-4381-b2e5-a34982cd17bd"
         },
         "item": {
-          "id": "0cf49029-f863-4d9d-82cc-762630f9c151",
+          "id": "6968b76c-4358-42fe-833f-fcd7fb5bc96b",
           "name": "03 - Todolist",
           "request": {
             "url": {
@@ -949,7 +950,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "25e19218-ae35-4749-9afa-888c8c6ee466",
+                "id": "43d325b7-42c8-49d5-8ed4-0a5bc4291543",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {\r",
@@ -962,7 +963,7 @@
                   "    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
                   "});"
                 ],
-                "_lastExecutionId": "4159e458-ffad-4d0e-a144-3225ed442860"
+                "_lastExecutionId": "0ea836b0-79c1-47e7-8de8-0b896cd2ad2b"
               }
             }
           ]
@@ -1007,7 +1008,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "3e60812f-ce7c-42cc-8673-04d64f123ce6",
+              "value": "c167a41b-05e2-499f-90e6-f03ac9b493d9",
               "system": true
             },
             {
@@ -1043,7 +1044,7 @@
           }
         },
         "response": {
-          "id": "3fc90fb7-58d7-4cbe-bccd-2d8f13bcbe0a",
+          "id": "945dcd40-5c88-4a55-9b04-3c7947594250",
           "status": "OK",
           "code": 200,
           "header": [
@@ -1057,7 +1058,7 @@
             },
             {
               "key": "Date",
-              "value": "Mon, 06 Mar 2023 12:15:16 GMT"
+              "value": "Mon, 06 Mar 2023 12:42:46 GMT"
             },
             {
               "key": "Keep-Alive",
@@ -1115,10 +1116,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 693,
+          "responseTime": 2044,
           "responseSize": 41
         },
-        "id": "0cf49029-f863-4d9d-82cc-762630f9c151",
+        "id": "6968b76c-4358-42fe-833f-fcd7fb5bc96b",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -1136,15 +1137,15 @@
       },
       {
         "cursor": {
-          "ref": "f384ee3a-b1aa-4fac-858d-e5343cfb1284",
+          "ref": "eaf5c33c-dc02-4104-974e-bf52aff2e42d",
           "length": 5,
           "cycles": 1,
           "position": 3,
           "iteration": 0,
-          "httpRequestId": "ab86ff58-0c6e-41cc-8d34-6106a33925e5"
+          "httpRequestId": "0e15e750-9f4b-41bc-b255-998eac69058a"
         },
         "item": {
-          "id": "c9eb28ce-0f98-4c85-8136-953a9f2f25ce",
+          "id": "1828bf9a-d4a6-4306-aa5c-7c13e9423abe",
           "name": "04 - TodoList/joe",
           "request": {
             "url": {
@@ -1177,18 +1178,18 @@
             {
               "listen": "prerequest",
               "script": {
-                "id": "3f8a2b9e-ef6f-4a03-ba37-c69271a54669",
+                "id": "c9f08001-356f-4f1e-8822-0367ccde10c4",
                 "type": "text/javascript",
                 "exec": [
                   ""
                 ],
-                "_lastExecutionId": "8cbf65e8-4dc4-4602-9564-71cc0c7074cd"
+                "_lastExecutionId": "ebfa13a6-9c14-4a7f-8443-72bd593b5189"
               }
             },
             {
               "listen": "test",
               "script": {
-                "id": "2ae44620-546e-4618-b23c-4a1fedea2bd5",
+                "id": "3336e0aa-43a2-4171-bb6c-01b2e06d5843",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {\r",
@@ -1201,7 +1202,7 @@
                   "    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
                   "});"
                 ],
-                "_lastExecutionId": "709498c0-3fd8-4cfb-8001-9fa1a694c9cb"
+                "_lastExecutionId": "f093fe51-9847-4d1d-8ee3-c913f53b5b5b"
               }
             }
           ]
@@ -1242,7 +1243,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "7a3b77a4-d403-461f-90fe-0ba05de38592",
+              "value": "2d60b4b2-ff6a-4f0c-b0b8-11e7bed35d0f",
               "system": true
             },
             {
@@ -1268,7 +1269,7 @@
           }
         },
         "response": {
-          "id": "44c6ee40-fe2b-4c3a-af84-d51e82274c25",
+          "id": "9901ce9b-e7e5-435f-bd0c-a4cadd122a9d",
           "status": "OK",
           "code": 200,
           "header": [
@@ -1282,7 +1283,7 @@
             },
             {
               "key": "Date",
-              "value": "Mon, 06 Mar 2023 12:15:16 GMT"
+              "value": "Mon, 06 Mar 2023 12:42:48 GMT"
             },
             {
               "key": "Keep-Alive",
@@ -1342,10 +1343,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 508,
+          "responseTime": 1560,
           "responseSize": 43
         },
-        "id": "c9eb28ce-0f98-4c85-8136-953a9f2f25ce",
+        "id": "1828bf9a-d4a6-4306-aa5c-7c13e9423abe",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -1363,15 +1364,15 @@
       },
       {
         "cursor": {
-          "ref": "a42a5b17-11d6-45e9-bd70-9f13f2c2c61a",
+          "ref": "19a27c6d-c561-43d7-b966-ba43b062f4d1",
           "length": 5,
           "cycles": 1,
           "position": 4,
           "iteration": 0,
-          "httpRequestId": "2ad6dc06-1a86-4338-91e1-8aa70117ec56"
+          "httpRequestId": "fef2e977-04ff-45d1-8228-0c540fcc8e06"
         },
         "item": {
-          "id": "65871da7-8612-42c0-a53a-17561f73c4c0",
+          "id": "491c5a9d-a831-49a5-952d-e153564083c0",
           "name": "05 - RABBITMQ - Check existing",
           "request": {
             "url": {
@@ -1409,19 +1410,19 @@
             {
               "listen": "prerequest",
               "script": {
-                "id": "227daedb-2858-47d4-8612-83572421cb3d",
+                "id": "6820b4eb-a61b-47f2-b2ec-d5e11c10cb89",
                 "type": "text/javascript",
                 "exec": [
                   "\r",
                   "setTimeout(function(){}, 20000);"
                 ],
-                "_lastExecutionId": "41abb870-9b61-4403-bb70-3ccdfe0f1fac"
+                "_lastExecutionId": "8c56dffb-ec4f-4847-a188-24d971b10aac"
               }
             },
             {
               "listen": "test",
               "script": {
-                "id": "820d7c52-bce3-40de-ba29-21065a2f42c4",
+                "id": "db032054-b2a7-4169-8b57-e80a24195909",
                 "type": "text/javascript",
                 "exec": [
                   "//Test assume an empty database and empty queue\r",
@@ -1441,7 +1442,7 @@
                   "});\r",
                   ""
                 ],
-                "_lastExecutionId": "4ef31bd4-520b-43c3-ae41-53d86334bbdb"
+                "_lastExecutionId": "ddf20e3e-2d98-4859-90df-f104694749b0"
               }
             }
           ]
@@ -1483,7 +1484,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "11072733-aaf6-4fd8-aec3-b62d52d48616",
+              "value": "85b73136-2028-4eba-b437-68dc2fc1a167",
               "system": true
             },
             {
@@ -1520,7 +1521,7 @@
           }
         },
         "response": {
-          "id": "feb796e7-3d48-42fd-ae7a-802817540862",
+          "id": "6e765ed9-e7cd-4f44-b17d-353de2335c20",
           "status": "OK",
           "code": 200,
           "header": [
@@ -1534,7 +1535,7 @@
             },
             {
               "key": "content-length",
-              "value": "818"
+              "value": "817"
             },
             {
               "key": "content-security-policy",
@@ -1546,7 +1547,7 @@
             },
             {
               "key": "date",
-              "value": "Mon, 06 Mar 2023 12:15:35 GMT"
+              "value": "Mon, 06 Mar 2023 12:43:08 GMT"
             },
             {
               "key": "server",
@@ -2284,15 +2285,15 @@
               49,
               50,
               58,
-              49,
-              53,
+              52,
+              50,
               58,
-              49,
-              55,
+              52,
+              57,
               46,
-              53,
-              49,
-              55,
+              48,
+              48,
+              54,
               43,
               48,
               48,
@@ -2312,8 +2313,8 @@
               58,
               55,
               52,
-              48,
-              56,
+              50,
+              52,
               44,
               34,
               109,
@@ -2875,18 +2876,18 @@
               105,
               116,
               64,
-              49,
-              98,
-              55,
-              101,
+              99,
+              48,
+              99,
+              57,
+              54,
               56,
               51,
+              100,
+              101,
               48,
-              57,
-              50,
-              97,
-              53,
-              50,
+              102,
+              102,
               34,
               44,
               34,
@@ -3753,7 +3754,7 @@
               34,
               58,
               49,
-              50,
+              48,
               125,
               44,
               34,
@@ -3814,15 +3815,15 @@
               49,
               50,
               58,
-              49,
-              53,
-              58,
-              49,
-              55,
-              46,
-              51,
               52,
               50,
+              58,
+              52,
+              56,
+              46,
+              54,
+              49,
+              55,
               43,
               48,
               48,
@@ -3841,9 +3842,9 @@
               34,
               58,
               55,
-              51,
-              49,
               50,
+              57,
+              54,
               44,
               34,
               109,
@@ -4762,18 +4763,18 @@
               105,
               116,
               64,
-              49,
-              98,
-              55,
-              101,
+              99,
+              48,
+              99,
+              57,
+              54,
               56,
               51,
+              100,
+              101,
               48,
-              57,
-              50,
-              97,
-              53,
-              50,
+              102,
+              102,
               34,
               44,
               34,
@@ -4852,11 +4853,10 @@
               115,
               34,
               58,
-              49,
+              56,
+              57,
+              50,
               48,
-              48,
-              49,
-              55,
               44,
               34,
               114,
@@ -4977,10 +4977,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 16,
-          "responseSize": 3414
+          "responseTime": 37,
+          "responseSize": 3413
         },
-        "id": "65871da7-8612-42c0-a53a-17561f73c4c0",
+        "id": "491c5a9d-a831-49a5-952d-e153564083c0",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -4998,405 +4998,9 @@
       }
     ],
     "transfers": {
-      "responseTotal": 1031
+      "responseTotal": 1034
     },
-    "failures": [
-      {
-        "error": {
-          "name": "AssertionError",
-          "index": 0,
-          "test": "Status code is 200",
-          "message": "expected response to have status code 200 but got 400",
-          "stack": "AssertionError: expected response to have status code 200 but got 400\n   at Object.eval sandbox-script.js:1:1)",
-          "checksum": "1b6d82fd325bf4b22cff01833651aec6",
-          "id": "d45758d4-7a8b-4047-bd31-0fef2132433d",
-          "timestamp": 1678104915050,
-          "stacktrace": [
-            {
-              "fileName": "sandbox-script.js",
-              "lineNumber": 1,
-              "functionName": "Object.eval",
-              "typeName": "Object",
-              "methodName": "eval",
-              "columnNumber": 1,
-              "native": false
-            }
-          ]
-        },
-        "at": "assertion:0 in test-script",
-        "source": {
-          "id": "21eb6131-0396-4b68-b088-0aa41960639f",
-          "name": "01 - Criar utilizador",
-          "request": {
-            "url": {
-              "protocol": "http",
-              "port": "8080",
-              "path": [
-                "user",
-                "register"
-              ],
-              "host": [
-                "authuser-cicd"
-              ],
-              "query": [],
-              "variable": []
-            },
-            "method": "POST",
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"username\": \"me2\",\r\n  \"password\": \"changeit\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            }
-          },
-          "response": [],
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "f66f6082-d8c3-4cd7-96e8-2d1714aa4a88",
-                "type": "text/javascript",
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {\r",
-                  "pm.response.to.have.status(200);\r",
-                  "});\r",
-                  "pm.test(\"Content-Type header is text/plain\", () => {\r",
-                  "pm.expect(pm.response.headers.get('Content-Type')).to.include('text/plain');\r",
-                  "});\r",
-                  "pm.test(\"Response time is less than 3000ms\", () => {\r",
-                  "pm.expect(pm.response.responseTime).to.be.below(3000);\r",
-                  "});"
-                ],
-                "_lastExecutionId": "16134dfc-5c11-4668-aaec-74bda5848232"
-              }
-            }
-          ]
-        },
-        "parent": {
-          "id": "0cc6ab83-2c22-490a-b029-3e55e3a735af",
-          "name": "Sessão4",
-          "item": [
-            {
-              "id": "21eb6131-0396-4b68-b088-0aa41960639f",
-              "name": "01 - Criar utilizador",
-              "request": {
-                "url": {
-                  "protocol": "http",
-                  "port": "8080",
-                  "path": [
-                    "user",
-                    "register"
-                  ],
-                  "host": [
-                    "authuser-cicd"
-                  ],
-                  "query": [],
-                  "variable": []
-                },
-                "method": "POST",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"username\": \"me2\",\r\n  \"password\": \"changeit\"\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                }
-              },
-              "response": [],
-              "event": [
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "f66f6082-d8c3-4cd7-96e8-2d1714aa4a88",
-                    "type": "text/javascript",
-                    "exec": [
-                      "pm.test(\"Status code is 200\", function () {\r",
-                      "pm.response.to.have.status(200);\r",
-                      "});\r",
-                      "pm.test(\"Content-Type header is text/plain\", () => {\r",
-                      "pm.expect(pm.response.headers.get('Content-Type')).to.include('text/plain');\r",
-                      "});\r",
-                      "pm.test(\"Response time is less than 3000ms\", () => {\r",
-                      "pm.expect(pm.response.responseTime).to.be.below(3000);\r",
-                      "});"
-                    ],
-                    "_lastExecutionId": "16134dfc-5c11-4668-aaec-74bda5848232"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "a0241381-63ad-4310-979b-ef2c2eb75237",
-              "name": "02 - Login",
-              "request": {
-                "url": {
-                  "protocol": "http",
-                  "port": "8080",
-                  "path": [
-                    "user",
-                    "login"
-                  ],
-                  "host": [
-                    "authuser-cicd"
-                  ],
-                  "query": [],
-                  "variable": []
-                },
-                "method": "POST",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"username\": \"me2\",\r\n  \"password\": \"changeit\"\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                }
-              },
-              "response": [],
-              "event": [
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "457ae5bc-23ce-46ba-ac2a-b1fbf990f6df",
-                    "type": "text/javascript",
-                    "exec": [
-                      "pm.test(\"Status code is 200\", function () {\r",
-                      "pm.response.to.have.status(200);\r",
-                      "});\r",
-                      "pm.test(\"Content-Type header is text/plain\", () => {\r",
-                      "pm.expect(pm.response.headers.get('Content-Type')).to.include('text/plain');\r",
-                      "});\r",
-                      "pm.test(\"Response time is less than 3000ms\", () => {\r",
-                      "pm.expect(pm.response.responseTime).to.be.below(3000);\r",
-                      "});\r",
-                      "//set variable with token to be used in later interactions\r",
-                      "pm.collectionVariables.set(\"token\", responseBody);"
-                    ],
-                    "_lastExecutionId": "a0f64acf-5c86-4824-87a4-fff47bec7c97"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "0cf49029-f863-4d9d-82cc-762630f9c151",
-              "name": "03 - Todolist",
-              "request": {
-                "url": {
-                  "protocol": "http",
-                  "port": "8080",
-                  "path": [
-                    "todolist"
-                  ],
-                  "host": [
-                    "todolist-cicd"
-                  ],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{token}}"
-                  }
-                ],
-                "method": "POST",
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"username\": \"me2\",\r\n  \"description\": \"string\"\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                }
-              },
-              "response": [],
-              "event": [
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "25e19218-ae35-4749-9afa-888c8c6ee466",
-                    "type": "text/javascript",
-                    "exec": [
-                      "pm.test(\"Status code is 200\", function () {\r",
-                      "    pm.response.to.have.status(200);\r",
-                      "});\r",
-                      "pm.test(\"Content-Type header is application/json\", () => {\r",
-                      "    pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');\r",
-                      "});\r",
-                      "pm.test(\"Response time is less than 3000ms\", () => {\r",
-                      "    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
-                      "});"
-                    ],
-                    "_lastExecutionId": "4159e458-ffad-4d0e-a144-3225ed442860"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "c9eb28ce-0f98-4c85-8136-953a9f2f25ce",
-              "name": "04 - TodoList/joe",
-              "request": {
-                "url": {
-                  "protocol": "http",
-                  "port": "8080",
-                  "path": [
-                    "todolist",
-                    "me2"
-                  ],
-                  "host": [
-                    "todolist-cicd"
-                  ],
-                  "query": [],
-                  "variable": []
-                },
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{token}}"
-                  }
-                ],
-                "method": "GET",
-                "auth": {
-                  "type": "noauth",
-                  "noauth": []
-                }
-              },
-              "response": [],
-              "event": [
-                {
-                  "listen": "prerequest",
-                  "script": {
-                    "id": "3f8a2b9e-ef6f-4a03-ba37-c69271a54669",
-                    "type": "text/javascript",
-                    "exec": [
-                      ""
-                    ],
-                    "_lastExecutionId": "8cbf65e8-4dc4-4602-9564-71cc0c7074cd"
-                  }
-                },
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "2ae44620-546e-4618-b23c-4a1fedea2bd5",
-                    "type": "text/javascript",
-                    "exec": [
-                      "pm.test(\"Status code is 200\", function () {\r",
-                      "    pm.response.to.have.status(200);\r",
-                      "});\r",
-                      "pm.test(\"Content-Type header is application/json\", () => {\r",
-                      "    pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');\r",
-                      "});\r",
-                      "pm.test(\"Response time is less than 3000ms\", () => {\r",
-                      "    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
-                      "});"
-                    ],
-                    "_lastExecutionId": "709498c0-3fd8-4cfb-8001-9fa1a694c9cb"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "65871da7-8612-42c0-a53a-17561f73c4c0",
-              "name": "05 - RABBITMQ - Check existing",
-              "request": {
-                "url": {
-                  "protocol": "http",
-                  "port": "15672",
-                  "path": [
-                    "api",
-                    "queues"
-                  ],
-                  "host": [
-                    "rabbit-cicd"
-                  ],
-                  "query": [],
-                  "variable": []
-                },
-                "method": "GET",
-                "auth": {
-                  "type": "basic",
-                  "basic": [
-                    {
-                      "type": "string",
-                      "value": "guest",
-                      "key": "password"
-                    },
-                    {
-                      "type": "string",
-                      "value": "guest",
-                      "key": "username"
-                    }
-                  ]
-                }
-              },
-              "response": [],
-              "event": [
-                {
-                  "listen": "prerequest",
-                  "script": {
-                    "id": "227daedb-2858-47d4-8612-83572421cb3d",
-                    "type": "text/javascript",
-                    "exec": [
-                      "\r",
-                      "setTimeout(function(){}, 20000);"
-                    ],
-                    "_lastExecutionId": "41abb870-9b61-4403-bb70-3ccdfe0f1fac"
-                  }
-                },
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "820d7c52-bce3-40de-ba29-21065a2f42c4",
-                    "type": "text/javascript",
-                    "exec": [
-                      "//Test assume an empty database and empty queue\r",
-                      "//convert response to json\r",
-                      "let jsonData = pm.response.json();\r",
-                      "pm.test(\"Status code is 200\", function () {\r",
-                      "pm.response.to.have.status(200);\r",
-                      "});\r",
-                      "//check if json is an array\r",
-                      "pm.test(\"Queues status\", () => {\r",
-                      "pm.expect(jsonData).to.be.an(\"array\");\r",
-                      "});\r",
-                      "//check if any queue has 1 message\r",
-                      "pm.test(\"The notification_response queue contains exactly 1 message\", () => {\r",
-                      "var res = jsonData.find(item => item.backing_queue_status.len === 1)\r",
-                      "pm.expect(typeof res !== \"undefined\").to.be.true;\r",
-                      "});\r",
-                      ""
-                    ],
-                    "_lastExecutionId": "4ef31bd4-520b-43c3-ae41-53d86334bbdb"
-                  }
-                }
-              ]
-            }
-          ],
-          "event": []
-        },
-        "cursor": {
-          "position": 0,
-          "iteration": 0,
-          "length": 5,
-          "cycles": 1,
-          "empty": false,
-          "eof": false,
-          "bof": true,
-          "cr": false,
-          "ref": "6ee76ef6-7618-401f-8169-353393ee31a5",
-          "httpRequestId": "f8ce00c2-8efc-4b40-86a8-26581f5a9d59",
-          "scriptId": "f66f6082-d8c3-4cd7-96e8-2d1714aa4a88",
-          "execution": "16134dfc-5c11-4668-aaec-74bda5848232"
-        }
-      }
-    ],
+    "failures": [],
     "error": null
   }
 }

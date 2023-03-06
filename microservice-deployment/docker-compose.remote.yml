@@ -21,7 +21,7 @@ services:
     ports: #Only expose the necessary ports. THis sone is needed to access the administration console
     - "127.0.0.1:15672:15672"
   notification-cicd: #notifications service
-    image: notifications
+    image: registry.solvit.pt/formacao/notifications
     restart: always
     container_name: notification-cicd
     depends_on: #Express dependency between services. notification-cicd will only starts when these are "ready" 
@@ -39,7 +39,7 @@ services:
       RMQ_PASS: guest
       RMQ_PORT: 5672
   authuser-cicd: #user autentication service
-    image: authuser
+    image: registry.solvit.pt/formacao/authuser
     restart: always
     container_name: authuser-cicd
     ports:
@@ -58,7 +58,7 @@ services:
       timeout: 5s
       retries: 10
   todolist-cicd: #todo service
-    image: todolist
+    image: registry.solvit.pt/formacao/todolist
     depends_on:
       postgres-cicd:
         condition: service_healthy

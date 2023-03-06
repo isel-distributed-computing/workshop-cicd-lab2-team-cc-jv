@@ -1,39 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="CI-CD MICROSERVICES" tests="5" time="1.665">
-  <testsuite name="Sessão4 / 01 - Criar utilizador" id="21eb6131-0396-4b68-b088-0aa41960639f" timestamp="2023-03-06T12:15:14.687Z" tests="3" failures="1" errors="0" time="0.266">
-    <testcase name="Status code is 200" time="0.266" classname="CiCdMicroservices">
-      <failure type="AssertionFailure" message="expected response to have status code 200 but got 400">
-        <![CDATA[Failed 1 times.]]>
-        <![CDATA[Collection JSON ID: b888053e-6a87-4663-b52a-ba93c07f477b.]]>
-        <![CDATA[Collection name: CI-CD MICROSERVICES.]]>
-        <![CDATA[Request name: Sessão4 / 01 - Criar utilizador.]]>
-        <![CDATA[Test description: Status code is 200.]]>
-        <![CDATA[Error message: expected response to have status code 200 but got 400.]]>
-        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 400
-   at Object.eval sandbox-script.js:1:1).]]>
-      </failure>
-    </testcase>
-    <testcase name="Content-Type header is text/plain" time="0.266" classname="CiCdMicroservices"/>
-    <testcase name="Response time is less than 3000ms" time="0.266" classname="CiCdMicroservices"/>
+<testsuites name="CI-CD MICROSERVICES" tests="5" time="5.497">
+  <testsuite name="Sessão4 / 01 - Criar utilizador" id="39dc7335-0df6-42a5-a164-72449516daa7" timestamp="2023-03-06T12:42:42.716Z" tests="3" failures="0" errors="0" time="1.402">
+    <testcase name="Status code is 200" time="1.402" classname="CiCdMicroservices"/>
+    <testcase name="Content-Type header is text/plain" time="1.402" classname="CiCdMicroservices"/>
+    <testcase name="Response time is less than 3000ms" time="1.402" classname="CiCdMicroservices"/>
   </testsuite>
-  <testsuite name="Sessão4 / 02 - Login" id="a0241381-63ad-4310-979b-ef2c2eb75237" timestamp="2023-03-06T12:15:14.687Z" tests="3" failures="0" errors="0" time="0.182">
-    <testcase name="Status code is 200" time="0.182" classname="CiCdMicroservices"/>
-    <testcase name="Content-Type header is text/plain" time="0.182" classname="CiCdMicroservices"/>
-    <testcase name="Response time is less than 3000ms" time="0.182" classname="CiCdMicroservices"/>
+  <testsuite name="Sessão4 / 02 - Login" id="0538f6b1-6fb1-4ff4-b5b7-61527f32fe88" timestamp="2023-03-06T12:42:42.716Z" tests="3" failures="0" errors="0" time="0.454">
+    <testcase name="Status code is 200" time="0.454" classname="CiCdMicroservices"/>
+    <testcase name="Content-Type header is text/plain" time="0.454" classname="CiCdMicroservices"/>
+    <testcase name="Response time is less than 3000ms" time="0.454" classname="CiCdMicroservices"/>
   </testsuite>
-  <testsuite name="Sessão4 / 03 - Todolist" id="0cf49029-f863-4d9d-82cc-762630f9c151" timestamp="2023-03-06T12:15:14.687Z" tests="3" failures="0" errors="0" time="0.693">
-    <testcase name="Status code is 200" time="0.693" classname="CiCdMicroservices"/>
-    <testcase name="Content-Type header is application/json" time="0.693" classname="CiCdMicroservices"/>
-    <testcase name="Response time is less than 3000ms" time="0.693" classname="CiCdMicroservices"/>
+  <testsuite name="Sessão4 / 03 - Todolist" id="6968b76c-4358-42fe-833f-fcd7fb5bc96b" timestamp="2023-03-06T12:42:42.716Z" tests="3" failures="0" errors="0" time="2.044">
+    <testcase name="Status code is 200" time="2.044" classname="CiCdMicroservices"/>
+    <testcase name="Content-Type header is application/json" time="2.044" classname="CiCdMicroservices"/>
+    <testcase name="Response time is less than 3000ms" time="2.044" classname="CiCdMicroservices"/>
   </testsuite>
-  <testsuite name="Sessão4 / 04 - TodoList/joe" id="c9eb28ce-0f98-4c85-8136-953a9f2f25ce" timestamp="2023-03-06T12:15:14.687Z" tests="3" failures="0" errors="0" time="0.508">
-    <testcase name="Status code is 200" time="0.508" classname="CiCdMicroservices"/>
-    <testcase name="Content-Type header is application/json" time="0.508" classname="CiCdMicroservices"/>
-    <testcase name="Response time is less than 3000ms" time="0.508" classname="CiCdMicroservices"/>
+  <testsuite name="Sessão4 / 04 - TodoList/joe" id="1828bf9a-d4a6-4306-aa5c-7c13e9423abe" timestamp="2023-03-06T12:42:42.716Z" tests="3" failures="0" errors="0" time="1.560">
+    <testcase name="Status code is 200" time="1.560" classname="CiCdMicroservices"/>
+    <testcase name="Content-Type header is application/json" time="1.560" classname="CiCdMicroservices"/>
+    <testcase name="Response time is less than 3000ms" time="1.560" classname="CiCdMicroservices"/>
   </testsuite>
-  <testsuite name="Sessão4 / 05 - RABBITMQ - Check existing" id="65871da7-8612-42c0-a53a-17561f73c4c0" timestamp="2023-03-06T12:15:14.687Z" tests="3" failures="0" errors="0" time="0.016">
-    <testcase name="Status code is 200" time="0.016" classname="CiCdMicroservices"/>
-    <testcase name="Queues status" time="0.016" classname="CiCdMicroservices"/>
-    <testcase name="The notification_response queue contains exactly 1 message" time="0.016" classname="CiCdMicroservices"/>
+  <testsuite name="Sessão4 / 05 - RABBITMQ - Check existing" id="491c5a9d-a831-49a5-952d-e153564083c0" timestamp="2023-03-06T12:42:42.716Z" tests="3" failures="0" errors="0" time="0.037">
+    <testcase name="Status code is 200" time="0.037" classname="CiCdMicroservices"/>
+    <testcase name="Queues status" time="0.037" classname="CiCdMicroservices"/>
+    <testcase name="The notification_response queue contains exactly 1 message" time="0.037" classname="CiCdMicroservices"/>
   </testsuite>
 </testsuites>
