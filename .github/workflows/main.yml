@@ -42,7 +42,7 @@ jobs:
     strategy:
       matrix:
         jdk: [17]
-        os: [ubuntu-18.04, ubuntu-22.04]
+        os: [ubuntu-20.04, ubuntu-22.04]
     steps:
     - name: Log in to the Container registry
       uses: docker/login-action@v2
