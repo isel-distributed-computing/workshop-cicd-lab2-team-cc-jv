@@ -26,7 +26,7 @@ jobs:
       # Build Java package
       - name: build auth phase-3
         run: |
-          cd phase-3/authusers
+          cd authusers
           mvn -B package -Dmaven.test.skip=true
       # Perform analysis
       - name: Perform CodeQL Analysis
@@ -48,8 +48,8 @@ jobs:
           name: authuser-jar
       - name: Copy JAR to target (to match Dockerfile)
         run: |
-          mkdir phase-3/authusers/target
-          cp authuser-phase2-1.0.0.jar phase-3/authusers/target/
+          mkdir authusers/target
+          cp authuser-phase2-1.0.0.jar authusers/target/
       - name: Log in to the Container registry
         uses: docker/login-action@v2
         with:
