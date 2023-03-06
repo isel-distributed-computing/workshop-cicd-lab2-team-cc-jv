@@ -1,3 +1,7 @@
+on: 
+  push:
+    branches:
+    - "main"
 jobs:
   build-scan-authuser:
     name: Build and scan Authuser service
