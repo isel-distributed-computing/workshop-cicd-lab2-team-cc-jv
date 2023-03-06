@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         jdk: [17]
-        os: [ubuntu-18.04, ubuntu-22.04, self-hosted]
+        os: [ubuntu-18.04, ubuntu-22.04] #[ubuntu-18.04, ubuntu-22.04, self-hosted]
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 17
