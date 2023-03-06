@@ -21,7 +21,7 @@ services:
     ports: #Only expose the necessary ports. THis sone is needed to access the administration console
     - "127.0.0.1:15672:15672"
   notification-cicd: #notifications service
-    image: notifications
+    image: registry.solvit.pt/formacao/notifications
     restart: always
     container_name: notification-cicd
     depends_on: #Express dependency between services. notification-cicd will only starts when these are "ready" 
@@ -39,7 +39,7 @@ services:
       RMQ_PASS: guest
       RMQ_PORT: 5672
   authuser-cicd: #user autentication service
-    image: authuser
+    image: registry.solvit.pt/formacao/authuser
     restart: always
     container_name: authuser-cicd
     ports:
@@ -57,8 +57,8 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
-  todolist_cicd: #todo service
-    image: todolist
+  todolist-cicd: #todo service
+    image: registry.solvit.pt/formacao/todolist
     depends_on:
       postgres-cicd:
         condition: service_healthy
@@ -67,7 +67,7 @@ services:
       authuser-cicd:
         condition: service_healthy
     restart: always
-    container_name: todolist_cicd
+    container_name: todolist-cicd
     ports:
       - 127.0.0.1:8082:8080
     environment:
@@ -80,3 +80,27 @@ services:
       RMQ_PASS: guest
       RMQ_PORT: 5672
       AUTH_SERVICE_URL: http://authuser-cicd:8080/
+    healthcheck: #checks if db is operating normally, i.e. accepting connections
+      test: ["CMD", "curl", "-f", "http://localhost:8080/swagger-ui/index.html"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  postman:
+    image: postman/newman:alpine
+    container_name: postmanTests
+    command: |
+      run CI-CD-MICROSERVICES.postman_collection.json -k
+      -r cli,json,junit
+      --reporter-json-export="reports/CI-CD-MICROSERVICES-tests.json"
+      --reporter-junit-export="reports/CI-CD-MICROSERVICES-tests.xml"
+    volumes:
+      - ./tests:/etc/newman
+    depends_on:
+      authuser-cicd:
+        condition: service_healthy
+      todolist-cicd:
+        condition: service_healthy
+      notification-cicd:
+        condition: service_started
+      rabbit-cicd:
+        condition: service_started
