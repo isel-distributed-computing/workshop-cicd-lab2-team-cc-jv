@@ -1,7 +1,7 @@
 name: Hello world
-on: 
-  schedule: 
-    -  cron: '*/10 * * * *'
+on: workflow_dispatch
+  #schedule: 
+    #-  cron: '*/10 * * * *'
 jobs:
   # the id of the name
   hello-world-job:
